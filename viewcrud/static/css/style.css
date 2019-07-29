@@ -8,16 +8,18 @@ h1{text-align:center;
     grid-template-columns:80px 1fr;}
 div{border:5px;
     padding:5px;}
-#a{text-align: center;
+.box1{
+    text-align: center;
     display: block;
-    background-color: powderblue;
+    background-image:url("http://mblogthumb1.phinf.naver.net/MjAxNzAzMjBfOTAg/MDAxNDg5OTc1MTI5MTM1.tXzRNwb1k3WsKZpWNQA0tAIis01fcnZMZfbKt-Xv61Eg.sz2hYxLxP7cA9sCjs8KYKvaC7kbNkgTQctznAFtrrsYg.JPEG.tourbaksa4u/%ED%95%98%EC%99%80%EC%9D%B4_%EC%97%AC%ED%96%89_%282%29.jpg?type=w800");
     margin: 10px;
     padding: 180px; 
     border-radius: 5px;
+    background-size: cover;
     /* background: url(./1.jpg);
     background-repeat: no-repeat; */
 }    
 
-.c{background-color: powderblue;
+.c{background-color: orange;
     margin: 1%; }
 

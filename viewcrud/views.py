@@ -58,6 +58,7 @@ def logout(request):
 
 def read(request):
     blogs = Blog.objects.all()
+    print(blogs)
     
     # 필터링, 정렬
     # blog_list = Blog.objects.all().filter(category='과제').order_by('-created_date')

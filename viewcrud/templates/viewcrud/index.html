@@ -3,30 +3,42 @@
 {% load staticfiles %}
 <head>
     <meta charset="UTF-8">
-    <title>메인</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>보러왕</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Jua&display=swap" rel="stylesheet">    
 </head>
 <body>
-       
-    <h1>MAIN</h1>
-    <div class="grid">
-   
     
+    
+        <img class="lo" src="{% static 'image/brw2.png' %}">
+      
+
+    <div>
+        <p class="p1">보러왕</p>
+    </div>
+    
+    <div class="grid_1">
+    <div class="wrapper"></div>   
+    <nav>    
+    <ul class="menu">
     {% if user.is_authenticated %}
     
-    
+   
    
         <a href="{% url 'logout' %}" >로그아웃</a>
     {% else %}
         <a href="{% url 'login' %}" >로그인</a>
         <a href="{% url 'signup' %}" >회원가입</a>
     {% endif %}
+  
+    </nav>
 
 
 </div> 
-
-    <a href="{% url 'home' %}" id="a" >Function Based CRUD</a>
-    
+ 
+<div class="col-md-3 col-sm-3 col-xs-6" class="div1"> 
+    <a href="{% url 'home' %}" target="_blank" class="btn btn-sm animated-button thar-three">START</a> 
+</div>
   
 </body>
 </html>
